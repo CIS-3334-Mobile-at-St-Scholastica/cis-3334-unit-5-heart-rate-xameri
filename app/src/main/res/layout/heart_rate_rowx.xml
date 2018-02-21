@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="5dp"
+        android:layout_width="91dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Pulse:" />
+        android:text="Pulse:"
+        />
 
     <TextView
         android:id="@+id/textViewPulse"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
-</LinearLayout>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="23dp"
+        android:text="Range" />
+
+    <TextView
+        android:id="@+id/textViewRn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewDes"
+        android:layout_centerHorizontal="true"
+        android:text="yamyam" />
+
+    <TextView
+        android:id="@+id/textViewDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:text="yam" />
+
+</RelativeLayout>
+
